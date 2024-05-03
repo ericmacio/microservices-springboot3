@@ -1,0 +1,1 @@
+docker-compose exec mongodb mongosh product-db --quiet --eval "db.products.find()"

@@ -1,0 +1,13 @@
+server:
+  port: 7001
+  error:
+    include-message: always
+
+spring:
+  application:
+    name: product
+
+logging:
+  level:
+    root: INFO
+    eric.microservices: DEBUG

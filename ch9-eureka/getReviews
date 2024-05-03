@@ -1,0 +1,1 @@
+docker-compose exec mysql mysql -uuser -ppwd review-db -e "select * from reviews"

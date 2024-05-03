@@ -1,0 +1,6 @@
+{
+    "client_id": "7H552dfTUKJ1WviwOvgYQAwGuGhwyio1",
+    "client_secret": "HVnvVXFF8jUbfRFem25YjbG7K4rjlWDzZMBTZXOo64lovUn6T33WfCDeGw0Y556Q",
+    "audience": "https://dev-3688dd2vsqyyzvw6.us.auth0.com/api/v2/",
+    "grant_type": "client_credentials"
+}

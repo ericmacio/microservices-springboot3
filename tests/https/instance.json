@@ -1,0 +1,43 @@
+[
+    {
+        "instanceId": "69f61cae028f:product:8080",
+        "hostName": "69f61cae028f",
+        "app": "PRODUCT",
+        "ipAddr": "172.21.0.8",
+        "status": "UP",
+        "overriddenStatus": "UNKNOWN",
+        "port": {
+            "$": 8080,
+            "@enabled": "true"
+        },
+        "securePort": {
+            "$": 443,
+            "@enabled": "false"
+        },
+        "countryId": 1,
+        "dataCenterInfo": {
+            "@class": "com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo",
+            "name": "MyOwn"
+        },
+        "leaseInfo": {
+            "renewalIntervalInSecs": 5,
+            "durationInSecs": 5,
+            "registrationTimestamp": 1712238390555,
+            "lastRenewalTimestamp": 1712239856944,
+            "evictionTimestamp": 0,
+            "serviceUpTimestamp": 1712238390555
+        },
+        "metadata": {
+            "management.port": "8080"
+        },
+        "homePageUrl": "http://69f61cae028f:8080/",
+        "statusPageUrl": "http://69f61cae028f:8080/actuator/info",
+        "healthCheckUrl": "http://69f61cae028f:8080/actuator/health",
+        "vipAddress": "product",
+        "secureVipAddress": "product",
+        "isCoordinatingDiscoveryServer": "false",
+        "lastUpdatedTimestamp": "1712238390555",
+        "lastDirtyTimestamp": "1712238388453",
+        "actionType": "ADDED"
+    }
+]

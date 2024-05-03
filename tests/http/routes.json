@@ -1,0 +1,68 @@
+[
+    {
+        "predicate": "Paths: [/composite/**], match trailing slash: true",
+        "route_id": "composite",
+        "filters": [],
+        "uri": "lb://composite",
+        "order": 0
+    },
+    {
+        "predicate": "Paths: [/openapi/**], match trailing slash: true",
+        "route_id": "composite-swagger-ui",
+        "filters": [],
+        "uri": "lb://composite",
+        "order": 0
+    },
+    {
+        "predicate": "Paths: [/eureka/api/{segment}], match trailing slash: true",
+        "route_id": "eureka-api",
+        "filters": [
+            "[[SetPath template = '/eureka/{segment}'], order = 1]"
+        ],
+        "uri": "http://eureka:8761",
+        "order": 0
+    },
+    {
+        "predicate": "Paths: [/eureka/web], match trailing slash: true",
+        "route_id": "eureka-web-start",
+        "filters": [
+            "[[SetPath template = '/'], order = 1]"
+        ],
+        "uri": "http://eureka:8761",
+        "order": 0
+    },
+    {
+        "predicate": "Paths: [/eureka/**], match trailing slash: true",
+        "route_id": "eureka-web-other",
+        "filters": [],
+        "uri": "http://eureka:8761",
+        "order": 0
+    },
+    {
+        "predicate": "(Hosts: [i.feel.lucky:8080] && Paths: [/headerrouting/**], match trailing slash: true)",
+        "route_id": "host_route_200",
+        "filters": [
+            "[[SetPath template = '/200'], order = 1]"
+        ],
+        "uri": "http://httpstat.us:80",
+        "order": 0
+    },
+    {
+        "predicate": "(Hosts: [im.a.teapot:8080] && Paths: [/headerrouting/**], match trailing slash: true)",
+        "route_id": "host_route_418",
+        "filters": [
+            "[[SetPath template = '/418'], order = 1]"
+        ],
+        "uri": "http://httpstat.us:80",
+        "order": 0
+    },
+    {
+        "predicate": "Paths: [/headerrouting/**], match trailing slash: true",
+        "route_id": "host_route_501",
+        "filters": [
+            "[[SetPath template = '/501'], order = 1]"
+        ],
+        "uri": "http://httpstat.us:80",
+        "order": 0
+    }
+]

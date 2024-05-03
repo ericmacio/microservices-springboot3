@@ -1,0 +1,1 @@
+docker run -d -p7000:8080 -e "SPRING_PROFILES_ACTIVE=docker" --name my-comp-srv composite

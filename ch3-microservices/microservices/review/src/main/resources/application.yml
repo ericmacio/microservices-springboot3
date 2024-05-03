@@ -1,0 +1,13 @@
+server:
+  port: 7003
+
+spring:
+  application:
+    name: review
+
+logging:
+  level:
+    root: INFO
+    eric.microservices: DEBUG
+
+

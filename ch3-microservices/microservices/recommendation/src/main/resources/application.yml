@@ -1,0 +1,12 @@
+server:
+  port: 7002
+
+spring:
+  application:
+    name: recommendation
+
+logging:
+  level:
+    root: INFO
+    eric.microservices: DEBUG
+

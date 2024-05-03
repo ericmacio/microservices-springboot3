@@ -1,0 +1,1 @@
+docker-compose exec mongodb mongosh recommendation-db --quiet --eval "db.recommendations.find()"

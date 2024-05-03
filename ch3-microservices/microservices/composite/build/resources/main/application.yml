@@ -1,0 +1,22 @@
+server:
+  port: 7000
+
+spring:
+  application:
+    name: composite
+
+logging:
+  level:
+    root: INFO
+    eric.microservices: DEBUG
+
+app:
+  product:
+    host: localhost
+    port: 7001
+  recommendation:
+    host: localhost
+    port: 7002
+  review:
+    host: localhost
+    port: 7003
